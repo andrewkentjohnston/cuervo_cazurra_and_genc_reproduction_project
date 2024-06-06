@@ -8,21 +8,13 @@ clear all
 set more off
 
 * ----- Data Import -----
-import delimited using "main_dataset.csv", clear
+import delimited using "./main_dataset.csv", clear
 
 * ----- Data Cleaning and Filtering -----
 * Dropping entities with incomplete observations for both years
-egen row_missing = rowmiss(perc_emnes c1 c2 c3 c4 c5 c6 gni_per_capita roads_paved_pct phones_per_1000 geographic_proximity colonial_link)
+egen row_missing = rowmiss(prop_emnes c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity colonial_link)
 bysort country: egen total_missing = total(row_missing)
 drop if total_missing > 0
-
-* Renaming variables
-rename c1 voice_and_accountability
-rename c2 pol_stab_abs_violence
-rename c3 government_effectiveness
-rename c4 regulatory_quality
-rename c5 rule_of_law
-rename c6 control_of_corruption
 
 * Generating a numeric ID for countries
 egen country_id = group(country)
@@ -32,50 +24,31 @@ egen country_id = group(country)
 xtset country_id year
 
 * Running a random effects panel Tobit model with bounds
-xttobit perc_emnes voice_and_accountability pol_stab_abs_violence government_effectiveness regulatory_quality rule_of_law control_of_corruption gni_per_capita roads_paved_pct phones_per_1000 geographic_proximity colonial_link, ll(0) ul(100) re
+log using "./results/model_1b_replication.log", replace text
+
+xttobit prop_emnes c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity colonial_link, ll(0) ul(100) re
 
 * Store the results of the random effects model
 estimates store re_model
 
+log close
+
 * Estimating a pooled Tobit model
-tobit perc_emnes voice_and_accountability pol_stab_abs_violence government_effectiveness regulatory_quality rule_of_law control_of_corruption gni_per_capita roads_paved_pct phones_per_1000 geographic_proximity colonial_link, ll(0) ul(100)
+log using "./results/model_1b_replication.log", append text
+
+tobit prop_emnes c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity colonial_link, ll(0) ul(100)
 
 * Store the results of the pooled Tobit model for later comparison
 estimates store pooled_model
 
-* ----- Output Results Section -----
-* Export random effects model results to a Word-compatible table with additional statistics
-estimates restore re_model
-local chi2_re = e(chi2)
-local ll_re = e(ll)
-outreg2 using "./results/model_1b_random_effects_results.doc", replace word addtext("Wald chi2", `chi2_re', "Log likelihood", `ll_re')
-
-* Export pooled model results to a different Word-compatible table with additional statistics
-estimates restore pooled_model
-local chi2_pooled = e(chi2)
-local ll_pooled = e(ll)
-outreg2 using "./results/model_1b_pooled_tobit_results.doc", replace word addtext("LR chi2", `chi2_pooled', "Log likelihood", `ll_pooled')
-
-* ----- Summary Statistics and Correlation Matrix -----
-* Save the output to a log file
-log using model_1b_summary_stats_and_corr_matrix.log, replace
-summarize perc_emnes voice_and_accountability pol_stab_abs_violence government_effectiveness regulatory_quality rule_of_law control_of_corruption gni_per_capita roads_paved_pct phones_per_1000 geographic_proximity colonial_link
-pwcorr perc_emnes voice_and_accountability pol_stab_abs_violence government_effectiveness regulatory_quality rule_of_law control_of_corruption gni_per_capita roads_paved_pct phones_per_1000 geographic_proximity colonial_link, star(0.05)
 log close
 
-* Save the summary statistics and correlation matrix to a text file
-capture noisily {
-    * Saving summary statistics to text file
-    quietly summarize perc_emnes voice_and_accountability pol_stab_abs_violence government_effectiveness regulatory_quality rule_of_law control_of_corruption gni_per_capita roads_paved_pct phones_per_1000 geographic_proximity colonial_link
-    outsheet using model_1b_summary_stats.txt, replace
-    
-    * Saving correlation matrix to text file
-    pwcorr perc_emnes voice_and_accountability pol_stab_abs_violence government_effectiveness regulatory_quality rule_of_law control_of_corruption gni_per_capita roads_paved_pct phones_per_1000 geographic_proximity colonial_link, star(0.05) outsheet replace using model_1b_corr_matrix.txt
-}
+* ----- Summary Statistics and Correlation Matrix -----
+* Log the summary statistics and correlation matrix
+log using "./results/model_1b_replication.log", append text
 
-* Save the summary statistics and correlation matrix to a Word file
-capture noisily {
-    outreg2 using model_1b_summary_stats_and_corr_matrix.doc, replace word
-}
+summarize prop_emnes c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity colonial_link
 
-* End of do-file
+pwcorr prop_emnes c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity colonial_link, star(0.05)
+
+log close
