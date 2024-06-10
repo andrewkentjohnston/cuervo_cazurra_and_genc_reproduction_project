@@ -8,7 +8,7 @@ clear all
 set more off
 
 * ----- Data Import -----
-import delimited using "./main_dataset.csv", clear
+import delimited using "../main_dataset.csv", clear
 
 * ----- Data Cleaning and Filtering -----
 * Dropping entities with incomplete observations for both years
@@ -24,7 +24,7 @@ egen country_id = group(country)
 xtset country_id year
 
 * Running a random effects panel Tobit model with bounds
-log using "./results/model_1b_replication.log", replace text
+log using "../results/model_1b_replication.log", replace text
 
 xttobit prop_emnes c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity colonial_link, ll(0) ul(100) re
 
@@ -34,7 +34,7 @@ estimates store re_model
 log close
 
 * Estimating a pooled Tobit model
-log using "./results/model_1b_replication.log", append text
+log using "../results/model_1b_replication.log", append text
 
 tobit prop_emnes c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity colonial_link, ll(0) ul(100)
 
@@ -45,7 +45,7 @@ log close
 
 * ----- Summary Statistics and Correlation Matrix -----
 * Log the summary statistics and correlation matrix
-log using "./results/model_1b_replication.log", append text
+log using "../results/model_1b_replication.log", append text
 
 summarize prop_emnes c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity colonial_link
 

@@ -1,7 +1,7 @@
 ﻿country,colonial_rulers
 afghanistan,"United Kingdom, Russia"
 angola,Portugal
-bangladesh,United Kingdom
+bangladesh,"United Kingdom, India"
 benin,France
 bhutan,"United Kingdom, India"
 burkina_faso,France
@@ -13,14 +13,14 @@ chad,France
 comoros,France
 djibouti,France
 democratic_republic_of_congo,Belgium
-equatorial_guinea,Spain
-eritrea,Italy
+equatorial_guinea,"Portugal, Spain"
+eritrea,"Ethiopia, Italy, United Kingdom"
 ethiopia,
 gambia,United Kingdom
 guinea,France
 guinea_bissau,Portugal
 haiti,France
-kiribati,United Kingdom
+kiribati,"United Kingdom, United States"
 laos,France
 lesotho,United Kingdom
 liberia,United States
@@ -34,16 +34,16 @@ myanmar,United Kingdom
 nepal,
 niger,France
 rwanda,"Belgium, Germany"
-samoa,"New Zealand, United Kingdom, Germany"
+samoa,"New Zealand, United Kingdom, Germany, United States"
 sao_tome_and_principe,Portugal
 senegal,France
 sierra_leone,United Kingdom
-solomon_islands,United Kingdom
-somalia,"United Kingdom, Italy"
+solomon_islands,"United Kingdom, Germany"
+somalia,"United Kingdom, Italy, France"
 sudan,"United Kingdom, Egypt"
 tanzania,"United Kingdom, Germany"
-togo,Germany
-tuvalu,United Kingdom
+togo,"Germany, France"
+tuvalu,"United Kingdom, United States"
 uganda,United Kingdom
 vanuatu,"France, United Kingdom"
 yemen,United Kingdom

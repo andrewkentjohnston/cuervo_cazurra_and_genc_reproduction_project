@@ -1,8 +1,8 @@
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
       name:  <unnamed>
-       log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/results/model_3b_replication.log
+       log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_3b_replication.log
   log type:  text
- opened on:   6 Jun 2024, 17:14:17
+ opened on:   6 Jun 2024, 17:34:40
 
 . 
 . xttobit prop_emnes_excl_former_col_power c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capit
@@ -91,21 +91,20 @@ LR test of sigma_u=0: chibar2(01) = 38.16              Prob >= chibar2 = 0.000
 
 . 
 . * Store the results of the random effects model
-
 . estimates store re_model
 
 . 
 . log close
       name:  <unnamed>
-       log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/results/model_3b_replication.log
+       log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_3b_replication.log
   log type:  text
- closed on:   6 Jun 2024, 17:14:17
+ closed on:   6 Jun 2024, 17:34:40
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
       name:  <unnamed>
-       log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/results/model_3b_replication.log
+       log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_3b_replication.log
   log type:  text
- opened on:   6 Jun 2024, 17:14:17
+ opened on:   6 Jun 2024, 17:34:40
 
 . 
 . tobit prop_emnes_excl_former_col_power c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita 
@@ -154,21 +153,20 @@ Log likelihood = -20.258753                         Pseudo R2         = 0.3972
 
 . 
 . * Store the results of the pooled Tobit model for later comparison
-
 . estimates store pooled_model
 
 . 
 . log close
       name:  <unnamed>
-       log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/results/model_3b_replication.log
+       log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_3b_replication.log
   log type:  text
- closed on:   6 Jun 2024, 17:14:17
+ closed on:   6 Jun 2024, 17:34:40
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
       name:  <unnamed>
-       log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/results/model_3b_replication.log
+       log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_3b_replication.log
   log type:  text
- opened on:   6 Jun 2024, 17:14:17
+ opened on:   6 Jun 2024, 17:34:40
 
 . 
 . summarize prop_emnes_excl_former_col_power c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_cap
@@ -221,7 +219,7 @@ colonial_l~k |   0.2839* -0.1690   0.1997   0.0071   1.0000
 . 
 . log close
       name:  <unnamed>
-       log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/results/model_3b_replication.log
+       log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_3b_replication.log
   log type:  text
- closed on:   6 Jun 2024, 17:14:17
+ closed on:   6 Jun 2024, 17:34:40
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------

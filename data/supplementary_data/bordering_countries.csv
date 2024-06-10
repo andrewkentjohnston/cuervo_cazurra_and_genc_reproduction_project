@@ -1,7 +1,7 @@
 ﻿country,bordering_countries
 afghanistan,"china, iran, pakistan, tajikistan, turkmenistan, uzbekistan"
 angola,"democratic_republic_of_congo, congo, namibia, zambia"
-bangladesh,"burma, india"
+bangladesh,"myanmar, india"
 benin,"burkina_faso, niger, nigeria, togo"
 bhutan,"china, india"
 burkina_faso,"benin, cote_d'ivoire, ghana, mali, niger, togo"
@@ -21,14 +21,14 @@ guinea,"cote_d'ivoire, guinea_bissau, liberia, mali, senegal, sierra_leone"
 guinea_bissau,"guinea, senegal"
 haiti,dominican_republic
 kiribati,
-laos,"burma, cambodia, china, thailand, vietnam"
+laos,"myanmar, cambodia, china, thailand, vietnam"
 lesotho,south_africa
 liberia,"guinea, cote_d'ivoire, sierra_leone"
 madagascar,
 malawi,"mozambique, tanzania, zambia"
 maldives,
-mali,"algeria, burkina_faso, guinea"
-mauritania,"algeria, mali, senegal, western_sahara"
+mali,"algeria, burkina_faso, cote_d'ivoire, guinea, mauritania, niger, senegal"
+mauritania,"algeria, mali, morocco, senegal"
 mozambique,"malawi, south_africa, swaziland, tanzania, zambia, zimbabwe"
 myanmar,"bangladesh, china, india, laos, thailand"
 nepal,"china, india"
@@ -47,4 +47,4 @@ tuvalu,
 uganda,"democratic_republic_of_congo, kenya, rwanda, sudan, tanzania"
 vanuatu,
 yemen,"oman, saudi_arabia"
-zambia,"angola, democratic_republic_of_congo, malawi, mozambique, namibia, tanzania, zimbabwe"
+zambia,"angola, botswana, democratic_republic_of_congo, malawi, mozambique, namibia, tanzania, zimbabwe"
