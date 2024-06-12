@@ -2,7 +2,7 @@
       name:  <unnamed>
        log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_2b_replication.log
   log type:  text
- opened on:  12 Jun 2024, 14:58:09
+ opened on:  12 Jun 2024, 15:54:57
 
 . 
 . xttobit prop_emnes_excl_nat_res c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_paved tot
@@ -96,13 +96,13 @@ LR test of sigma_u=0: chibar2(01) = 30.83              Prob >= chibar2 = 0.000
       name:  <unnamed>
        log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_2b_replication.log
   log type:  text
- closed on:  12 Jun 2024, 14:58:10
+ closed on:  12 Jun 2024, 15:54:57
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
       name:  <unnamed>
        log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_2b_replication.log
   log type:  text
- opened on:  12 Jun 2024, 14:58:10
+ opened on:  12 Jun 2024, 15:54:57
 
 . 
 . tobit prop_emnes_excl_nat_res c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_paved total
@@ -159,13 +159,13 @@ Log likelihood = 3.2459475                          Pseudo R2         = 1.1402
       name:  <unnamed>
        log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_2b_replication.log
   log type:  text
- closed on:  12 Jun 2024, 14:58:10
+ closed on:  12 Jun 2024, 15:54:57
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
       name:  <unnamed>
        log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_2b_replication.log
   log type:  text
- opened on:  12 Jun 2024, 14:58:10
+ opened on:  12 Jun 2024, 15:54:57
 
 . 
 . summarize prop_emnes_excl_nat_res c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_paved t
@@ -220,5 +220,5 @@ colonial_l~k |   0.2255  -0.2094   0.1908   0.2023   1.0000
       name:  <unnamed>
        log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_2b_replication.log
   log type:  text
- closed on:  12 Jun 2024, 14:58:10
+ closed on:  12 Jun 2024, 15:54:57
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
