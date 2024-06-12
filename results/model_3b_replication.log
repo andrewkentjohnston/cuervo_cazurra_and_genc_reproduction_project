@@ -2,11 +2,11 @@
       name:  <unnamed>
        log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_3b_replication.log
   log type:  text
- opened on:  12 Jun 2024, 14:56:54
+ opened on:  12 Jun 2024, 15:03:04
 
 . 
 . xttobit prop_emnes_excl_former_col_power c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_
-> paved total_phones_per_1000 geographic_proximity colonial_link, ll(0) ul(100) re
+> paved total_phones_per_1000 geographic_proximity, ll(0) ul(100) re
 
 Fitting comparison model:
 
@@ -20,35 +20,33 @@ Iteration 4:  Log likelihood =  -34.91409
 
 Fitting full model:
 
-Iteration 0:  Log likelihood = -32.482762  
-Iteration 1:  Log likelihood = -20.455622  
-Iteration 2:  Log likelihood = -19.932213  
-Iteration 3:  Log likelihood = -19.931357  
-Iteration 4:  Log likelihood = -19.931357  
+Iteration 0:  Log likelihood = -35.539126  
+Iteration 1:  Log likelihood = -25.070787  
+Iteration 2:  Log likelihood = -24.856523  
+Iteration 3:  Log likelihood = -24.856235  
+Iteration 4:  Log likelihood = -24.856235  
 
 Obtaining starting values for full model:
 
-Iteration 0:  Log likelihood =   16.24946
-Iteration 1:  Log likelihood =  16.555818
-Iteration 2:  Log likelihood =  16.557541
-Iteration 3:  Log likelihood =  16.557542
+Iteration 0:  Log likelihood =  15.466183
+Iteration 1:  Log likelihood =  15.731719
+Iteration 2:  Log likelihood =  15.733027
+Iteration 3:  Log likelihood =  15.733027
 
 Fitting full model:
 
-Iteration 0:  Log likelihood =  -21.03975  (not concave)
-Iteration 1:  Log likelihood = -17.158486  (not concave)
-Iteration 2:  Log likelihood =  -15.44519  
-Iteration 3:  Log likelihood =  -3.838359  (not concave)
-Iteration 4:  Log likelihood = -3.7861887  (not concave)
-Iteration 5:  Log likelihood = -3.7232119  (not concave)
-Iteration 6:  Log likelihood = -.89065978  (not concave)
-Iteration 7:  Log likelihood = -.00323678  (not concave)
-Iteration 8:  Log likelihood = -.00323678  (not concave)
-Iteration 9:  Log likelihood =  .21008824  
-Iteration 10: Log likelihood =   .4357777  
-Iteration 11: Log likelihood =  .46311185  
-Iteration 12: Log likelihood =  .46325531  
-Iteration 13: Log likelihood =  .46325532  
+Iteration 0:  Log likelihood =   -22.2893  (not concave)
+Iteration 1:  Log likelihood = -18.245685  (not concave)
+Iteration 2:  Log likelihood = -15.053631  
+Iteration 3:  Log likelihood = -5.7313259  
+Iteration 4:  Log likelihood = -3.5184745  
+Iteration 5:  Log likelihood = -2.9894606  
+Iteration 6:  Log likelihood = -2.9894606  (backed up)
+Iteration 7:  Log likelihood = -2.8887217  
+Iteration 8:  Log likelihood = -2.7876353  
+Iteration 9:  Log likelihood = -2.7862916  
+Iteration 10: Log likelihood = -2.7862909  
+Iteration 11: Log likelihood = -2.7862909  
 
 Random-effects tobit regression                     Number of obs     =     54
                                                            Uncensored =     26
@@ -63,31 +61,30 @@ Random effects u_i ~ Gaussian                       Obs per group:
 
 Integration method: mvaghermite                     Integration pts.  =     12
 
-                                                    Wald chi2(11)     =  25.21
-Log likelihood = .46325532                          Prob > chi2       = 0.0085
+                                                    Wald chi2(10)     =  29.41
+Log likelihood = -2.7862909                         Prob > chi2       = 0.0011
 
 --------------------------------------------------------------------------------------------------
 prop_emnes_excl_former_col_power | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
 ---------------------------------+----------------------------------------------------------------
-                c1_voice_and_acc |   -.091104   .0716464    -1.27   0.204    -.2315284    .0493204
-                c2_pol_stability |  -.0669081   .0562832    -1.19   0.235    -.1772211     .043405
-            c3_gov_effectiveness |   .0531761   .0552297     0.96   0.336    -.0550722    .1614244
-                  c4_reg_quality |   .1237071   .0808379     1.53   0.126    -.0347323    .2821464
-                  c5_rule_of_law |   .1698641   .1179239     1.44   0.150    -.0612624    .4009907
-        c6_control_of_corruption |  -.1118673   .0887619    -1.26   0.208    -.2858374    .0621028
-                  gni_per_capita |  -.0000468   .0004107    -0.11   0.909    -.0008516    .0007581
-                perc_roads_paved |   .0017339   .0067557     0.26   0.797    -.0115071     .014975
-           total_phones_per_1000 |  -.0020642   .0024575    -0.84   0.401    -.0068808    .0027524
-            geographic_proximity |   .5140229   .2027505     2.54   0.011     .1166392    .9114065
-                   colonial_link |   .3471564   .1475992     2.35   0.019     .0578672    .6364456
-                           _cons |  -.3070259   .2119318    -1.45   0.147    -.7224047    .1083529
+                c1_voice_and_acc |  -.0899089   .0737129    -1.22   0.223    -.2343836    .0545657
+                c2_pol_stability |  -.0900133   .0508934    -1.77   0.077    -.1897625    .0097358
+            c3_gov_effectiveness |   .0697866   .0553584     1.26   0.207    -.0387138     .178287
+                  c4_reg_quality |   .1610044   .0777161     2.07   0.038     .0086837     .313325
+                  c5_rule_of_law |   .2155153   .1139772     1.89   0.059    -.0078758    .4389064
+        c6_control_of_corruption |  -.1769363   .0822849    -2.15   0.032    -.3382116   -.0156609
+                  gni_per_capita |   .0005161   .0004324     1.19   0.233    -.0003314    .0013637
+                perc_roads_paved |   .0023472   .0054685     0.43   0.668    -.0083708    .0130652
+           total_phones_per_1000 |  -.0016745   .0023389    -0.72   0.474    -.0062586    .0029095
+            geographic_proximity |   .7061292   .2356665     3.00   0.003     .2442314    1.168027
+                           _cons |  -.3495907   .1770503    -1.97   0.048    -.6966028   -.0025785
 ---------------------------------+----------------------------------------------------------------
-                        /sigma_u |   .3590841   .0660099     5.44   0.000     .2297071    .4884611
-                        /sigma_e |   .0558567   .0111489     5.01   0.000     .0340053    .0777081
+                        /sigma_u |   .4321131   .0778992     5.55   0.000     .2794334    .5847928
+                        /sigma_e |   .0575195   .0113752     5.06   0.000     .0352245    .0798145
 ---------------------------------+----------------------------------------------------------------
-                             rho |   .9763748   .0126339                      .9381907    .9924159
+                             rho |   .9825896    .009185                      .9546816    .9942778
 --------------------------------------------------------------------------------------------------
-LR test of sigma_u=0: chibar2(01) = 40.79              Prob >= chibar2 = 0.000
+LR test of sigma_u=0: chibar2(01) = 44.14              Prob >= chibar2 = 0.000
 
 
 . 
@@ -99,57 +96,56 @@ LR test of sigma_u=0: chibar2(01) = 40.79              Prob >= chibar2 = 0.000
       name:  <unnamed>
        log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_3b_replication.log
   log type:  text
- closed on:  12 Jun 2024, 14:56:54
+ closed on:  12 Jun 2024, 15:03:05
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
       name:  <unnamed>
        log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_3b_replication.log
   log type:  text
- opened on:  12 Jun 2024, 14:56:54
+ opened on:  12 Jun 2024, 15:03:05
 
 . 
 . tobit prop_emnes_excl_former_col_power c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_pa
-> ved total_phones_per_1000 geographic_proximity colonial_link, ll(0) ul(100)
+> ved total_phones_per_1000 geographic_proximity, ll(0) ul(100)
 
 Refining starting values:
 
-Grid node 0:  Log likelihood = -35.883162
+Grid node 0:  Log likelihood = -38.896504
 
 Fitting full model:
 
-Iteration 0:  Log likelihood = -35.883162  
-Iteration 1:  Log likelihood = -22.466467  
-Iteration 2:  Log likelihood = -20.021561  
-Iteration 3:  Log likelihood = -19.932427  
-Iteration 4:  Log likelihood = -19.931358  
-Iteration 5:  Log likelihood = -19.931357  
+Iteration 0:  Log likelihood = -38.896504  
+Iteration 1:  Log likelihood = -27.293316  
+Iteration 2:  Log likelihood = -24.894162  
+Iteration 3:  Log likelihood = -24.856525  
+Iteration 4:  Log likelihood = -24.856235  
+Iteration 5:  Log likelihood = -24.856235  
 
 Tobit regression                                    Number of obs     =     54
                                                            Uncensored =     26
 Limits: Lower =   0                                     Left-censored =     28
         Upper = 100                                    Right-censored =      0
 
-                                                    LR chi2(11)       =  29.97
-                                                    Prob > chi2       = 0.0016
-Log likelihood = -19.931357                         Pseudo R2         = 0.4291
+                                                    LR chi2(10)       =  20.12
+                                                    Prob > chi2       = 0.0282
+Log likelihood = -24.856235                         Pseudo R2         = 0.2881
 
 ---------------------------------------------------------------------------------------------------------
        prop_emnes_excl_former_col_power | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
 ----------------------------------------+----------------------------------------------------------------
-                       c1_voice_and_acc |  -.1130637   .1359193    -0.83   0.410    -.3871712    .1610437
-                       c2_pol_stability |  -.1141535   .1088166    -1.05   0.300     -.333603    .1052961
-                   c3_gov_effectiveness |   .2626377   .1796717     1.46   0.151    -.0997048    .6249801
-                         c4_reg_quality |   .0292776   .1871693     0.16   0.876    -.3481853    .4067405
-                         c5_rule_of_law |   .1781921    .280299     0.64   0.528    -.3870847     .743469
-               c6_control_of_corruption |  -.0503606   .2506888    -0.20   0.842    -.5559228    .4552015
-                         gni_per_capita |  -.0000993   .0004667    -0.21   0.833    -.0010405    .0008419
-                       perc_roads_paved |   .0022939   .0074129     0.31   0.758    -.0126557    .0172435
-                  total_phones_per_1000 |  -.0039575   .0032067    -1.23   0.224    -.0104244    .0025094
-                   geographic_proximity |   .3200739   .1764193     1.81   0.077    -.0357096    .6758574
-                          colonial_link |   .5471078   .1984491     2.76   0.009     .1468971    .9473185
-                                  _cons |   -.255901    .232675    -1.10   0.278    -.7251349    .2133329
+                       c1_voice_and_acc |  -.0931896   .1408438    -0.66   0.512    -.3770417    .1906625
+                       c2_pol_stability |  -.0903287   .1057468    -0.85   0.398    -.3034474      .12279
+                   c3_gov_effectiveness |    .317853   .1850046     1.72   0.093    -.0549992    .6907052
+                         c4_reg_quality |   .1737464   .1864698     0.93   0.357    -.2020588    .5495516
+                         c5_rule_of_law |     .05987   .2875908     0.21   0.836    -.5197312    .6394711
+               c6_control_of_corruption |  -.2885955   .2410903    -1.20   0.238    -.7744811    .1972901
+                         gni_per_capita |   .0003951   .0004835     0.82   0.418    -.0005793    .0013695
+                       perc_roads_paved |   .0008076   .0071804     0.11   0.911    -.0136635    .0152787
+                  total_phones_per_1000 |  -.0021999   .0031865    -0.69   0.494    -.0086219     .004222
+                   geographic_proximity |   .3865342   .1891454     2.04   0.047     .0053366    .7677318
+                                  _cons |  -.1527754   .2370704    -0.64   0.523    -.6305595    .3250087
 ----------------------------------------+----------------------------------------------------------------
- var(e.prop_emnes_excl_former_col_power)|   .1070867   .0317201                      .0589256    .1946107
+ var(e.prop_emnes_excl_former_col_power)|   .1278765   .0386394                      .0695536    .2351049
 ---------------------------------------------------------------------------------------------------------
 
 . 
@@ -161,17 +157,17 @@ Log likelihood = -19.931357                         Pseudo R2         = 0.4291
       name:  <unnamed>
        log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_3b_replication.log
   log type:  text
- closed on:  12 Jun 2024, 14:56:54
+ closed on:  12 Jun 2024, 15:03:05
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
       name:  <unnamed>
        log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_3b_replication.log
   log type:  text
- opened on:  12 Jun 2024, 14:56:54
+ opened on:  12 Jun 2024, 15:03:05
 
 . 
 . summarize prop_emnes_excl_former_col_power c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_road
-> s_paved total_phones_per_1000 geographic_proximity colonial_link
+> s_paved total_phones_per_1000 geographic_proximity 
 
     Variable |        Obs        Mean    Std. dev.       Min        Max
 -------------+---------------------------------------------------------
@@ -188,11 +184,10 @@ perc_roads~d |         64    16.21563    10.65616         .8       44.5
 total_p~1000 |         64    26.65625    25.63803          3        104
 -------------+---------------------------------------------------------
 geographic~y |         64     .109375    .3145764          0          1
-colonial_l~k |         64         .75    .4364358          0          1
 
 . 
 . pwcorr prop_emnes_excl_former_col_power c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_p
-> aved total_phones_per_1000 geographic_proximity colonial_link, star(0.05)
+> aved total_phones_per_1000 geographic_proximity, star(0.05)
 
              | prop_e~r c1_voi~c c2_pol~y c3_gov~s c4_reg~y c5_rul~w c6_con~n
 -------------+---------------------------------------------------------------
@@ -207,20 +202,18 @@ gni_per_ca~a |  -0.0428   0.0596  -0.0795   0.0290   0.0582   0.0039  -0.0011
 perc_roads~d |  -0.1630  -0.0985   0.2149   0.0605   0.0142   0.1043   0.1779 
 total_p~1000 |   0.0673  -0.0090   0.2724*  0.3628*  0.1985   0.3922*  0.3316*
 geographic~y |   0.4666*  0.1117   0.0664   0.2353   0.3000*  0.2156  -0.1140 
-colonial_l~k |   0.3913*  0.1924   0.0981   0.1833   0.2264   0.1378  -0.0627 
 
-             | gni_pe~a perc_r~d tot~1000 geogra~y coloni~k
--------------+---------------------------------------------
+             | gni_pe~a perc_r~d tot~1000 geogra~y
+-------------+------------------------------------
 gni_per_ca~a |   1.0000 
 perc_roads~d |   0.2465*  1.0000 
 total_p~1000 |   0.3507*  0.4162*  1.0000 
 geographic~y |  -0.1082  -0.2037   0.0776   1.0000 
-colonial_l~k |   0.2255  -0.2094   0.1908   0.2023   1.0000 
 
 . 
 . log close
       name:  <unnamed>
        log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_3b_replication.log
   log type:  text
- closed on:  12 Jun 2024, 14:56:54
+ closed on:  12 Jun 2024, 15:03:05
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -12,7 +12,7 @@ import delimited using "../main_dataset.csv", clear
 
 * ----- Data Cleaning and Filtering -----
 * Dropping entities with incomplete observations for both years
-egen row_missing = rowmiss(prop_emnes c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity colonial_link)
+egen row_missing = rowmiss(prop_emnes c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity)
 bysort country: egen total_missing = total(row_missing)
 drop if total_missing > 0
 
@@ -26,7 +26,7 @@ xtset country_id year
 * Running a random effects panel Tobit model with bounds
 log using "../results/model_3b_replication.log", replace text
 
-xttobit prop_emnes_excl_former_col_power c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity colonial_link, ll(0) ul(100) re
+xttobit prop_emnes_excl_former_col_power c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity, ll(0) ul(100) re
 
 * Store the results of the random effects model
 estimates store re_model
@@ -36,7 +36,7 @@ log close
 * Estimating a pooled Tobit model
 log using "../results/model_3b_replication.log", append text
 
-tobit prop_emnes_excl_former_col_power c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity colonial_link, ll(0) ul(100)
+tobit prop_emnes_excl_former_col_power c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity, ll(0) ul(100)
 
 * Store the results of the pooled Tobit model for later comparison
 estimates store pooled_model
@@ -47,8 +47,8 @@ log close
 * Log the summary statistics and correlation matrix
 log using "../results/model_3b_replication.log", append text
 
-summarize prop_emnes_excl_former_col_power c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity colonial_link
+summarize prop_emnes_excl_former_col_power c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity 
 
-pwcorr prop_emnes_excl_former_col_power c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity colonial_link, star(0.05)
+pwcorr prop_emnes_excl_former_col_power c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity, star(0.05)
 
 log close
