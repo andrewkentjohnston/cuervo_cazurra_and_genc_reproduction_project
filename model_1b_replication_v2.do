@@ -27,57 +27,33 @@ egen country_id = group(country)
 xtset country_id year
 
 * Running a random effects panel Tobit model with bounds
-log using "../results/model_1b_replication.log", replace text
+log using "../results/model_1b_replication.log", replace 
 
 xttobit prop_emnes c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity colonial_link, ll(0) ul(100) re
 
 * Store the results of the random effects model
 estimates store re_model
 
-* Export random effects model results to Excel
-mat b = e(b)
-mat V = e(V)
-putexcel set "../results/random_effects_model.xlsx", replace
-putexcel A1 = matrix(b), names
-putexcel set "../results/random_effects_model.xlsx", modify
-putexcel A1 = matrix(V)
-
 log close
 
 * Estimating a pooled Tobit model
-log using "../results/model_1b_replication.log", append text
+log using "../results/model_1b_replication.log", append 
 
 tobit prop_emnes c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity colonial_link, ll(0) ul(100)
 
 * Store the results of the pooled Tobit model for later comparison
 estimates store pooled_model
 
-* Export pooled Tobit model results to Excel
-mat b = e(b)
-mat V = e(V)
-putexcel set "../results/pooled_tobit_model.xlsx", replace
-putexcel A1 = matrix(b), names
-putexcel set "../results/pooled_tobit_model.xlsx", modify
-putexcel A1 = matrix(V)
-
 log close
 
 * ----- Summary Statistics and Correlation Matrix -----
 * Log the summary statistics and correlation matrix
-log using "../results/model_1b_replication.log", append text
+log using "../results/model_1b_replication.log", append 
 
 * Summary statistics
 summarize prop_emnes c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity colonial_link
 
-* Export summary statistics to Excel
-export excel using "../results/summary_statistics.xlsx", sheet("Summary Statistics") firstrow(variables) replace
-
 * Correlation matrix
 pwcorr prop_emnes c1_voice_and_acc c2_pol_stability c3_gov_effectiveness c4_reg_quality c5_rule_of_law c6_control_of_corruption gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity colonial_link, star(0.05)
-
-* Export correlation matrix to Excel
-matrix R = r(C)
-putexcel set "../results/correlation_matrix.xlsx", replace
-putexcel A1 = matrix(R), names
 
 log close
