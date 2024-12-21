@@ -1,0 +1,249 @@
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_3a_replication.log
+  log type:  text
+ opened on:  20 Dec 2024, 21:45:37
+
+. 
+. xttobit prop_emnes_excl_former_col_power gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity, ll(0) ul(100) re
+
+Fitting comparison model:
+
+Fitting constant-only model:
+
+Iteration 0:  Log likelihood = -47.104778  
+Iteration 1:  Log likelihood = -35.551402  
+Iteration 2:  Log likelihood = -34.914405  
+Iteration 3:  Log likelihood =  -34.91409  
+Iteration 4:  Log likelihood =  -34.91409  
+
+Fitting full model:
+
+Iteration 0:  Log likelihood = -40.407698  
+Iteration 1:  Log likelihood = -29.182578  
+Iteration 2:  Log likelihood =  -28.80485  
+Iteration 3:  Log likelihood = -28.803793  
+Iteration 4:  Log likelihood = -28.803793  
+
+Obtaining starting values for full model:
+
+Iteration 0:  Log likelihood =  20.948852
+Iteration 1:  Log likelihood =  21.140814
+Iteration 2:  Log likelihood =  21.141977
+Iteration 3:  Log likelihood =  21.141978
+
+Fitting full model:
+
+Iteration 0:  Log likelihood = -19.885918  
+Iteration 1:  Log likelihood = -13.261304  
+Iteration 2:  Log likelihood =  -12.63495  
+Iteration 3:  Log likelihood = -11.044207  (not concave)
+Iteration 4:  Log likelihood = -10.955775  (not concave)
+Iteration 5:  Log likelihood = -10.932843  (not concave)
+Iteration 6:  Log likelihood = -10.923723  (not concave)
+Iteration 7:  Log likelihood = -10.897363  (not concave)
+Iteration 8:  Log likelihood = -10.877132  (not concave)
+Iteration 9:  Log likelihood = -10.594262  (not concave)
+Iteration 10: Log likelihood = -10.553897  (not concave)
+Iteration 11: Log likelihood = -10.533288  (not concave)
+Iteration 12: Log likelihood = -10.493577  (not concave)
+Iteration 13: Log likelihood = -10.469997  (not concave)
+Iteration 14: Log likelihood = -10.451883  (not concave)
+Iteration 15: Log likelihood = -10.427199  (not concave)
+Iteration 16: Log likelihood = -10.416937  (not concave)
+Iteration 17: Log likelihood = -10.393375  (not concave)
+Iteration 18: Log likelihood = -10.382705  (not concave)
+Iteration 19: Log likelihood = -10.265108  (not concave)
+Iteration 20: Log likelihood = -10.227311  (not concave)
+Iteration 21: Log likelihood = -10.219976  (not concave)
+Iteration 22: Log likelihood = -10.200582  (not concave)
+Iteration 23: Log likelihood = -10.186437  (not concave)
+Iteration 24: Log likelihood = -10.165936  (not concave)
+Iteration 25: Log likelihood = -10.155596  (not concave)
+Iteration 26: Log likelihood = -10.153326  (not concave)
+Iteration 27: Log likelihood = -10.150379  (not concave)
+Iteration 28: Log likelihood = -10.143301  (not concave)
+Iteration 29: Log likelihood = -10.142001  (not concave)
+Iteration 30: Log likelihood = -10.074432  (not concave)
+Iteration 31: Log likelihood = -10.063298  (not concave)
+Iteration 32: Log likelihood = -10.053915  (not concave)
+Iteration 33: Log likelihood = -10.041711  (not concave)
+Iteration 34: Log likelihood = -10.036436  (not concave)
+Iteration 35: Log likelihood = -10.029553  (not concave)
+Iteration 36: Log likelihood = -10.022215  (not concave)
+Iteration 37: Log likelihood = -10.016547  (not concave)
+Iteration 38: Log likelihood = -10.013206  (not concave)
+Iteration 39: Log likelihood = -10.012226  (not concave)
+Iteration 40: Log likelihood =  -10.00538  (not concave)
+Iteration 41: Log likelihood = -9.9978474  (not concave)
+Iteration 42: Log likelihood = -9.9968233  (not concave)
+Iteration 43: Log likelihood = -9.9939861  (not concave)
+Iteration 44: Log likelihood = -9.9926259  (not concave)
+Iteration 45: Log likelihood =  -9.991976  (not concave)
+Iteration 46: Log likelihood =  -9.786637  (not concave)
+Iteration 47: Log likelihood = -9.6355638  (not concave)
+Iteration 48: Log likelihood = -9.6133711  (not concave)
+Iteration 49: Log likelihood = -9.4419306  (not concave)
+Iteration 50: Log likelihood = -9.4295311  (not concave)
+Iteration 51: Log likelihood = -9.4276289  (not concave)
+Iteration 52: Log likelihood = -9.4213616  (not concave)
+Iteration 53: Log likelihood = -9.4142583  (not concave)
+Iteration 54: Log likelihood = -9.4071954  (not concave)
+Iteration 55: Log likelihood = -9.3980703  (not concave)
+Iteration 56: Log likelihood = -9.3964123  (not concave)
+Iteration 57: Log likelihood = -9.3926152  (not concave)
+Iteration 58: Log likelihood = -9.3918407  (not concave)
+Iteration 59: Log likelihood = -9.3798193  (not concave)
+Iteration 60: Log likelihood =  -9.374326  (not concave)
+Iteration 61: Log likelihood = -9.3739073  (not concave)
+Iteration 62: Log likelihood = -9.3738943  (not concave)
+Iteration 63: Log likelihood = -9.3736339  (not concave)
+Iteration 64: Log likelihood = -9.3730435  (not concave)
+Iteration 65: Log likelihood = -9.3729335  (not concave)
+Iteration 66: Log likelihood = -9.3725274  (not concave)
+Iteration 67: Log likelihood = -9.3722238  (not concave)
+Iteration 68: Log likelihood =  -9.370895  (not concave)
+Iteration 69: Log likelihood =  -9.369783  (not concave)
+Iteration 70: Log likelihood =  -9.369783  (not concave)
+Iteration 71: Log likelihood = -9.3682486  (not concave)
+Iteration 72: Log likelihood =  -9.351373  
+Iteration 73: Log likelihood = -9.3361849  
+Iteration 74: Log likelihood = -9.3306374  
+Iteration 75: Log likelihood = -9.3305042  
+Iteration 76: Log likelihood = -9.3305039  
+
+Random-effects tobit regression                     Number of obs     =     54
+                                                           Uncensored =     26
+Limits: Lower =   0                                     Left-censored =     28
+        Upper = 100                                    Right-censored =      0
+
+Group variable: country_id                          Number of groups  =     28
+Random effects u_i ~ Gaussian                       Obs per group:
+                                                                  min =      1
+                                                                  avg =    1.9
+                                                                  max =      2
+
+Integration method: mvaghermite                     Integration pts.  =     12
+
+                                                    Wald chi2(4)      =   9.21
+Log likelihood = -9.3305039                         Prob > chi2       = 0.0561
+
+--------------------------------------------------------------------------------------------------
+prop_emnes_excl_former_col_power | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+---------------------------------+----------------------------------------------------------------
+                  gni_per_capita |   .0004607   .0006353     0.73   0.468    -.0007844    .0017059
+                perc_roads_paved |   .0005889   .0202998     0.03   0.977    -.0391979    .0403757
+           total_phones_per_1000 |  -.0002897   .0051307    -0.06   0.955    -.0103456    .0097663
+            geographic_proximity |   .7177018   .2775664     2.59   0.010     .1736817    1.261722
+                           _cons |  -.2893274   .3040187    -0.95   0.341    -.8851932    .3065383
+---------------------------------+----------------------------------------------------------------
+                        /sigma_u |   .3898565   .0776774     5.02   0.000     .2376116    .5421015
+                        /sigma_e |   .0841381   .0173185     4.86   0.000     .0501944    .1180818
+---------------------------------+----------------------------------------------------------------
+                             rho |   .9554955   .0257327                      .8777458    .9873733
+--------------------------------------------------------------------------------------------------
+LR test of sigma_u=0: chibar2(01) = 38.95              Prob >= chibar2 = 0.000
+
+
+. 
+. * Store the results of the random effects model
+
+. estimates store re_model
+
+. 
+. log close
+      name:  <unnamed>
+       log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_3a_replication.log
+  log type:  text
+ closed on:  20 Dec 2024, 21:45:37
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_3a_replication.log
+  log type:  text
+ opened on:  20 Dec 2024, 21:45:37
+
+. 
+. tobit prop_emnes_excl_former_col_power gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity, ll(0) ul(100)
+
+Refining starting values:
+
+Grid node 0:  Log likelihood = -42.081818
+
+Fitting full model:
+
+Iteration 0:  Log likelihood = -42.081818  
+Iteration 1:  Log likelihood = -31.211287  
+Iteration 2:  Log likelihood = -28.822611  
+Iteration 3:  Log likelihood =  -28.80392  
+Iteration 4:  Log likelihood = -28.803793  
+Iteration 5:  Log likelihood = -28.803793  
+
+Tobit regression                                    Number of obs     =     54
+                                                           Uncensored =     26
+Limits: Lower =   0                                     Left-censored =     28
+        Upper = 100                                    Right-censored =      0
+
+                                                    LR chi2(4)        =  12.22
+                                                    Prob > chi2       = 0.0158
+Log likelihood = -28.803793                         Pseudo R2         = 0.1750
+
+---------------------------------------------------------------------------------------------------------
+       prop_emnes_excl_former_col_power | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+----------------------------------------+----------------------------------------------------------------
+                         gni_per_capita |   .0004266   .0004678     0.91   0.366     -.000513    .0013661
+                       perc_roads_paved |  -.0014583   .0072199    -0.20   0.841    -.0159598    .0130433
+                  total_phones_per_1000 |  -.0008004   .0030117    -0.27   0.792    -.0068496    .0052487
+                   geographic_proximity |   .5877393   .1887144     3.11   0.003     .2086953    .9667832
+                                  _cons |   -.177386   .2023093    -0.88   0.385    -.5837362    .2289642
+----------------------------------------+----------------------------------------------------------------
+ var(e.prop_emnes_excl_former_col_power)|   .1518264   .0463849                      .0821952    .2804451
+---------------------------------------------------------------------------------------------------------
+
+. 
+. * Store the results of the pooled Tobit model for later comparison
+
+. estimates store pooled_model
+
+. 
+. log close
+      name:  <unnamed>
+       log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_3a_replication.log
+  log type:  text
+ closed on:  20 Dec 2024, 21:45:37
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_3a_replication.log
+  log type:  text
+ opened on:  20 Dec 2024, 21:45:37
+
+. 
+. summarize prop_emnes_excl_former_col_power gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity 
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+prop_emnes~r |         54    .1642776    .2601345          0          1
+gni_per_ca~a |         64    290.3125    136.2883        100        710
+perc_roads~d |         64    16.21563    10.65616         .8       44.5
+total_p~1000 |         64    26.65625    25.63803          3        104
+geographic~y |         64     .109375    .3145764          0          1
+
+. 
+. pwcorr prop_emnes_excl_former_col_power gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity, star(0.05)
+
+             | prop_e~r gni_pe~a perc_r~d tot~1000 geogra~y
+-------------+---------------------------------------------
+prop_emnes~r |   1.0000 
+gni_per_ca~a |  -0.0428   1.0000 
+perc_roads~d |  -0.1630   0.2465*  1.0000 
+total_p~1000 |   0.0673   0.3507*  0.4162*  1.0000 
+geographic~y |   0.4666* -0.1082  -0.2037   0.0776   1.0000 
+
+. 
+. log close
+      name:  <unnamed>
+       log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_3a_replication.log
+  log type:  text
+ closed on:  20 Dec 2024, 21:45:37
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------

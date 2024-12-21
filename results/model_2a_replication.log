@@ -1,0 +1,190 @@
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_2a_replication.log
+  log type:  text
+ opened on:  20 Dec 2024, 21:45:02
+
+. 
+. xttobit prop_emnes_excl_nat_res gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity colonial_link, ll(0) ul(100) re
+
+Fitting comparison model:
+
+Fitting constant-only model:
+
+Iteration 0:  Log likelihood = -43.032381  
+Iteration 1:  Log likelihood =  -24.75286  
+Iteration 2:  Log likelihood = -23.163533  
+Iteration 3:  Log likelihood = -23.149036  
+Iteration 4:  Log likelihood = -23.149032  
+Iteration 5:  Log likelihood = -23.149032  
+
+Fitting full model:
+
+Iteration 0:  Log likelihood =  -24.90044  
+Iteration 1:  Log likelihood = -5.4105028  
+Iteration 2:  Log likelihood = -4.4310464  
+Iteration 3:  Log likelihood = -4.4292343  
+Iteration 4:  Log likelihood = -4.4292342  
+
+Obtaining starting values for full model:
+
+Iteration 0:  Log likelihood =  82.719752
+Iteration 1:  Log likelihood =  82.898215
+Iteration 2:  Log likelihood =  86.679805
+Iteration 3:  Log likelihood =  87.298427
+Iteration 4:  Log likelihood =   87.34352
+Iteration 5:  Log likelihood =  87.343918
+
+Fitting full model:
+
+Iteration 0:  Log likelihood = -7.2190173  
+Iteration 1:  Log likelihood =  11.394952  
+Iteration 2:  Log likelihood =  12.948476  
+Iteration 3:  Log likelihood =  13.012122  
+Iteration 4:  Log likelihood =  13.012122  (backed up)
+Iteration 5:  Log likelihood =  13.099371  
+Iteration 6:  Log likelihood =  13.103948  
+Iteration 7:  Log likelihood =  13.103963  
+Iteration 8:  Log likelihood =  13.103963  
+
+Random-effects tobit regression                     Number of obs     =     64
+                                                           Uncensored =     26
+Limits: Lower =   0                                     Left-censored =     38
+        Upper = 100                                    Right-censored =      0
+
+Group variable: country_id                          Number of groups  =     32
+Random effects u_i ~ Gaussian                       Obs per group:
+                                                                  min =      2
+                                                                  avg =    2.0
+                                                                  max =      2
+
+Integration method: mvaghermite                     Integration pts.  =     12
+
+                                                    Wald chi2(5)      =  62.84
+Log likelihood = 13.103963                          Prob > chi2       = 0.0000
+
+-----------------------------------------------------------------------------------------
+prop_emnes_excl_nat_res | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+------------------------+----------------------------------------------------------------
+         gni_per_capita |   .0002419   .0002375     1.02   0.308    -.0002236    .0007074
+       perc_roads_paved |   .0068938   .0032682     2.11   0.035     .0004883    .0132993
+  total_phones_per_1000 |  -.0020764   .0013452    -1.54   0.123    -.0047129    .0005602
+   geographic_proximity |   .5568002   .0745705     7.47   0.000     .4106447    .7029557
+          colonial_link |   .2503081   .0800735     3.13   0.002     .0933669    .4072493
+                  _cons |  -.4636295     .11196    -4.14   0.000    -.6830671    -.244192
+------------------------+----------------------------------------------------------------
+               /sigma_u |   .1884097   .0372092     5.06   0.000     .1154811    .2613383
+               /sigma_e |   .0377831   .0072544     5.21   0.000     .0235648    .0520014
+------------------------+----------------------------------------------------------------
+                    rho |   .9613397   .0208583                      .8994996     .987908
+-----------------------------------------------------------------------------------------
+LR test of sigma_u=0: chibar2(01) = 35.07              Prob >= chibar2 = 0.000
+
+
+. 
+. * Store the results of the random effects model
+
+. estimates store re_model
+
+. 
+. log close
+      name:  <unnamed>
+       log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_2a_replication.log
+  log type:  text
+ closed on:  20 Dec 2024, 21:45:03
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_2a_replication.log
+  log type:  text
+ opened on:  20 Dec 2024, 21:45:03
+
+. 
+. tobit prop_emnes_excl_nat_res gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity colonial_link, ll(0) ul(100)
+
+Refining starting values:
+
+Grid node 0:  Log likelihood = -27.108944
+
+Fitting full model:
+
+Iteration 0:  Log likelihood = -27.108944  
+Iteration 1:  Log likelihood = -9.2809088  
+Iteration 2:  Log likelihood = -4.5238109  
+Iteration 3:  Log likelihood = -4.4301455  
+Iteration 4:  Log likelihood = -4.4292348  
+Iteration 5:  Log likelihood = -4.4292342  
+Iteration 6:  Log likelihood = -4.4292342  
+
+Tobit regression                                    Number of obs     =     64
+                                                           Uncensored =     26
+Limits: Lower =   0                                     Left-censored =     38
+        Upper = 100                                    Right-censored =      0
+
+                                                    LR chi2(5)        =  37.44
+                                                    Prob > chi2       = 0.0000
+Log likelihood = -4.4292342                         Pseudo R2         = 0.8087
+
+------------------------------------------------------------------------------------------------
+       prop_emnes_excl_nat_res | Coefficient  Std. err.      t    P>|t|     [95% conf. interval]
+-------------------------------+----------------------------------------------------------------
+                gni_per_capita |   .0002085    .000177     1.18   0.244    -.0001457    .0005627
+              perc_roads_paved |   .0036186   .0027066     1.34   0.186    -.0017973    .0090345
+         total_phones_per_1000 |  -.0014505   .0010934    -1.33   0.190    -.0036384    .0007374
+          geographic_proximity |   .4035258   .0691406     5.84   0.000     .2651759    .5418758
+                 colonial_link |   .1523562   .0700686     2.17   0.034     .0121492    .2925632
+                         _cons |  -.2614617   .0898774    -2.91   0.005    -.4413061   -.0816174
+-------------------------------+----------------------------------------------------------------
+ var(e.prop_emnes_excl_nat_res)|   .0212526   .0065382                      .0114832    .0393332
+------------------------------------------------------------------------------------------------
+
+. 
+. * Store the results of the pooled Tobit model for later comparison
+
+. estimates store pooled_model
+
+. 
+. log close
+      name:  <unnamed>
+       log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_2a_replication.log
+  log type:  text
+ closed on:  20 Dec 2024, 21:45:03
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_2a_replication.log
+  log type:  text
+ opened on:  20 Dec 2024, 21:45:03
+
+. 
+. summarize prop_emnes_excl_nat_res gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity colonial_link
+
+    Variable |        Obs        Mean    Std. dev.       Min        Max
+-------------+---------------------------------------------------------
+prop_emnes~s |         64    .0726409    .1232506          0         .5
+gni_per_ca~a |         64    290.3125    136.2883        100        710
+perc_roads~d |         64    16.21563    10.65616         .8       44.5
+total_p~1000 |         64    26.65625    25.63803          3        104
+geographic~y |         64     .109375    .3145764          0          1
+-------------+---------------------------------------------------------
+colonial_l~k |         64         .75    .4364358          0          1
+
+. 
+. pwcorr prop_emnes_excl_nat_res gni_per_capita perc_roads_paved total_phones_per_1000 geographic_proximity colonial_link, star(0.05)
+
+             | prop~res gni_pe~a perc_r~d tot~1000 geogra~y coloni~k
+-------------+------------------------------------------------------
+prop_emnes~s |   1.0000 
+gni_per_ca~a |   0.0242   1.0000 
+perc_roads~d |  -0.1180   0.2465*  1.0000 
+total_p~1000 |   0.0766   0.3507*  0.4162*  1.0000 
+geographic~y |   0.7543* -0.1082  -0.2037   0.0776   1.0000 
+colonial_l~k |   0.3010*  0.2255  -0.2094   0.1908   0.2023   1.0000 
+
+. 
+. log close
+      name:  <unnamed>
+       log:  /Users/andrewjohnston/coding_projects/complete_reproduction_folder/do_files/../results/model_2a_replication.log
+  log type:  text
+ closed on:  20 Dec 2024, 21:45:03
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
