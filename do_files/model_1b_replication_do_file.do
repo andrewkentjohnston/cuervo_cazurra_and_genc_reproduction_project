@@ -19,6 +19,10 @@ drop if total_missing > 0
 * Generating a numeric ID for countries
 egen country_id = group(country)
 
+* Transforming the dependent variable into a percentage
+replace prop_emnes = prop_emnes * 100
+
+
 * ----- Data Analysis -----
 * Declaring the data as panel data using the new country ID
 xtset country_id year
